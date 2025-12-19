@@ -43,3 +43,18 @@
 .read-the-docs {
   color: #888;
 }
+
+.title {
+  font-size: 9.5vw;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-weight: 450;
+}
+
+.section {
+  font-size: 8.5vw;
+  font-weight: 700;
+}

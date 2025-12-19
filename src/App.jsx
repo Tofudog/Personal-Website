@@ -1,28 +1,24 @@
 import './App.css'
-
-function renderAccordion() {
-  return <>
-    <details class="collapse bg-base-100 border border-base-300" name="my-accordion-det-1" open>
-      <summary class="collapse-title font-semibold">How do I create an account?</summary>
-      <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-    </details>
-    <details class="collapse bg-base-100 border border-base-300" name="my-accordion-det-1">
-      <summary class="collapse-title font-semibold">I forgot my password. What should I do?</summary>
-      <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
-    </details>
-    <details class="collapse bg-base-100 border border-base-300" name="my-accordion-det-1">
-      <summary class="collapse-title font-semibold">How do I update my profile information?</summary>
-      <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
-    </details>
-  </>
-}
+import topBackground from './assets/top-background.gif'
 
 function App() {
 
   return (
     <>
       <div>
-        {renderAccordion()}
+        <h1 class="title">
+          Leonardo de Farias
+        </h1>
+        <br></br>
+        <h2 class="subtitle">
+          CS Student @ Emory, Aspiring Front End Developer
+        </h2>
+        <br></br><br></br><br></br>
+        <h1 class="section">
+          <span class="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 via gray-300 to-gray-500">
+            Experiences
+          </span>
+        </h1>
       </div>
     </>
   )
