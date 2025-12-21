@@ -4,9 +4,7 @@ const Title = () => {
     return (
         <div
             style={{
-                backgroundImage: `
-                    url(${topBackground})
-                `,
+                backgroundImage: `url(${topBackground})`,
                 backgroundSize: "100% 100%",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "top center",
@@ -19,9 +17,17 @@ const Title = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 color: "white",
-                textAlign: "center"
+                textAlign: "center",
+
+                position: "relative", // container must be relative
+                overflow: "hidden"
             }}
         >
+            {/* Moon in the sky (top 30% of container) */}
+            <div className="sky">
+                <div className="moon" />
+            </div>
+
             <h1 className="title">
                 Leonardo de Farias
             </h1>

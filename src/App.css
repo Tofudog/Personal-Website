@@ -58,3 +58,36 @@
   font-size: 60px;
   font-weight: 700;
 }
+
+/* Sky container only covers top 30% */
+.sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    overflow: visible;
+}
+
+/* Moon floating in the sky */
+.moon {
+    position: absolute;
+    top: 5%;      /* moved further up */
+    right: 1%;   /* moved slightly more to the side */
+    width: 55px;
+    height: 55px;
+    border-radius: 9999px;
+    background: radial-gradient(circle at 30% 30%, #ffffff, #e5e7eb 60%, #d1d5db);
+    box-shadow: 0 0 18px rgba(255,255,255,0.6), 0 0 36px rgba(255,255,255,0.4);
+
+    animation: moon-drift 10s ease-in-out infinite;
+    z-index: 2;
+}
+
+/* Moon floating animation remains the same */
+@keyframes moon-drift {
+    0% { transform: translate(0,0); }
+    50% { transform: translate(-10px, 6px); }
+    100% { transform: translate(0,0); }
+}
+
