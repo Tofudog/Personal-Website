@@ -1,12 +1,14 @@
 import './App.css';
 import Experiences from './components/Experiences';
 import Title from './components/Title';
+import Navbar from './components/Navbar';
 
 function App() {
 
   return (
     <>
       <div>
+        <Navbar></Navbar>
         <br></br>
         <div>
           <Title></Title>
