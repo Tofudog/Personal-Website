@@ -59,6 +59,19 @@
   font-weight: 700;
 }
 
+.navbar-section {
+  margin-left: 35px;
+}
+
+.navbar-section > a {
+  color: white;
+  font-size: larger;
+}
+
+.navbar-section > p {
+  text-align: right;
+}
+
 /* Sky container only covers top 30% */
 .sky {
     position: absolute;
@@ -72,13 +85,13 @@
 /* Moon floating in the sky */
 .moon {
     position: absolute;
-    top: 55%;      /* moved further up */
-    right: 8%;   /* moved slightly more to the side */
-    width: 55px;
-    height: 55px;
+    top: 150px;      /* moved further up */
+    right: 10vw;   /* moved slightly more to the side */
+    width: 7vw;
+    height: 7vw;
     border-radius: 9999px;
     background: radial-gradient(circle at 30% 30%, #ffffff, #e5e7eb 60%, #d1d5db);
-    box-shadow: 0 0 18px rgba(255,255,255,0.6), 0 0 36px rgba(255,255,255,0.4);
+    box-shadow: 0 0 30px rgba(255,255,255,0.6), 0 0 36px rgba(255,255,255,0.4);
 
     animation: moon-drift 10s ease-in-out infinite;
     z-index: 2;
