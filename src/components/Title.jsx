@@ -2,8 +2,13 @@ import topBackground from "./../assets/lion-image-moon.png";
 
 const Title = () => {
     return (
-        <div
-            style={{
+        <>
+            <div>
+                <div className="sky">
+                    <div className="moon" />
+                </div>
+            </div>
+            <div style={{
                 backgroundImage: `url(${topBackground})`,
                 backgroundSize: "100% 100%",
                 backgroundRepeat: "no-repeat",
@@ -21,21 +26,16 @@ const Title = () => {
 
                 position: "relative", // container must be relative
                 overflow: "hidden"
-            }}
-        >
-            {/* Moon in the sky (top 30% of container) */}
-            <div className="sky">
-                <div className="moon" />
+            }}>
+                <h1 className="title">
+                    Leonardo de Farias
+                </h1>
+
+                <h2 className="subtitle">
+                    CS Student @ Emory, Aspiring Front End Developer
+                </h2>
             </div>
-
-            <h1 className="title">
-                Leonardo de Farias
-            </h1>
-
-            <h2 className="subtitle">
-                CS Student @ Emory, Aspiring Front End Developer
-            </h2>
-        </div>
+        </>
     );
 };
 

@@ -72,8 +72,8 @@
 /* Moon floating in the sky */
 .moon {
     position: absolute;
-    top: 5%;      /* moved further up */
-    right: 1%;   /* moved slightly more to the side */
+    top: 25%;      /* moved further up */
+    right: 10%;   /* moved slightly more to the side */
     width: 55px;
     height: 55px;
     border-radius: 9999px;
