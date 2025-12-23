@@ -17,7 +17,7 @@ const StarBackground = () => {
     }, []);
 
     const generateStars = () => {
-        const numberOfStars = Math.floor((window.innerWidth * window.innerHeight) / 3000);
+        const numberOfStars = Math.floor((window.innerWidth * window.innerHeight) / 2000);
 
         const newStars = [];
 
@@ -28,7 +28,7 @@ const StarBackground = () => {
                 x: Math.random() * 100,
                 y: Math.random() * 100,
                 opacty: Math.random() * 0.5 + 0.5,
-                animationDuration: Math.random() * 4 + 2
+                animationDuration: Math.random() * 7 + 3
             });
         }
 
@@ -44,9 +44,8 @@ const StarBackground = () => {
                     left: `${star.x}%`,
                     top: `${star.y}%`,
                     opacty: `${star.opacty}`,
-                    animationDuration: `${star.animationDuration}s`,
+                    animationDuration: `${star.animationDuration}s`
                 }}>
-
                 </div>
             ))}
         </div>
