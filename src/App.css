@@ -108,4 +108,11 @@
   @apply absolute rounded-full bg-white;
   background-color: rgba(255, 255, 197);
   box-shadow: 0 0 10px 2px rgba(255, 255, 225, 0.4);
+  animation: star-blink infinite;
+}
+
+@keyframes star-blink {
+    30% { opacity: 0; }
+    50% { opacity: 0.5; }
+    70% { opacity: 0.7; }
 }
