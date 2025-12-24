@@ -84,6 +84,16 @@
   color: rgb(255, 204, 127);
 }
 
+#navbar-button {
+  color: white;
+  background-color: rgb(11, 10, 10, 0);
+  z-index: 10;
+}
+
+#navbar-button:hover {
+  background-color: rgb(25, 22, 22, 0.5);
+}
+
 /* Sky container only covers top 30% */
 .sky {
     position: absolute;

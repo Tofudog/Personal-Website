@@ -11,7 +11,14 @@ const Navbar = () => {
   return (
     <div className="w-full py-4">
       <div className="absolute left-10">
-        <h1 className="text-xl font-bold">לאו_</h1>
+        <div className="flex items-center gap-3">
+          <button id="navbar-button" onClick={() => {scrollToSection("experiences-view")}}>
+            <div>
+              <h1>=</h1>
+            </div>
+          </button>
+          <h1 className="text-xl font-bold">לאו_</h1>
+        </div>
       </div>
 
       <div className="max-w-6xl mx-auto flex justify-center">
