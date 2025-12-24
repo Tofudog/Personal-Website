@@ -66,10 +66,22 @@
 .navbar-section > a {
   color: white;
   font-size: larger;
+  position: relative;
+  z-index: 10;
 }
 
 .navbar-section > p {
   text-align: right;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar-section:hover > a {
+  color: rgb(255, 204, 127);
+}
+
+.navbar-section:hover > p {
+  color: rgb(255, 204, 127);
 }
 
 /* Sky container only covers top 30% */

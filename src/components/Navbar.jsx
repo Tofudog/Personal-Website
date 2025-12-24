@@ -1,3 +1,11 @@
+import React, { useState } from 'react'
+
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
 const Navbar = () => {
   return (
@@ -10,11 +18,11 @@ const Navbar = () => {
         <div className="hidden lg:flex gap-10">
           <div className="navbar-section">
             <p>001</p>
-            <a>// home</a>
+            <a onClick={() => scrollToSection("home-view")}>// home</a>
           </div>
           <div className="navbar-section">
             <p>010</p>
-            <a>// experiences</a>
+            <a onClick={() => scrollToSection("experiences-view")}>// experiences</a>
           </div>
           <div className="navbar-section">
             <p>011</p>
