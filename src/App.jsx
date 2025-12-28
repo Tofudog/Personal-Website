@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import Experiences from './components/Experiences';
 import Title from './components/Title';
 import Navbar from './components/Navbar';
@@ -10,6 +11,7 @@ const Home = () => {
         <div>
           <StarBackground></StarBackground>
           <Navbar></Navbar>
+          <br></br><br></br>
           <Title></Title>
         </div>
         <br></br><br></br><br></br>
@@ -36,7 +38,9 @@ const Home = () => {
 function App() {
   return (
     <>
-      <Home></Home>
+      <div>
+        <Home></Home>
+      </div>
     </>
   )
 }

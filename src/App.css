@@ -94,6 +94,40 @@
   background-color: rgb(25, 22, 22, 0.5);
 }
 
+#navbar-overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background-color: rgba(22, 21, 21, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#navbar-overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#navbar-overlay a:hover, a:focus {
+  color: #f1f1f1;
+}
+
+#navbar-overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 /* Sky container only covers top 30% */
 .sky {
     position: absolute;
