@@ -4,6 +4,7 @@ import Experiences from './components/Experiences';
 import Title from './components/Title';
 import Navbar from './components/Navbar';
 import StarBackground from './components/StarBackground';
+import Dictionary from './components/Dictionary';
 
 const Home = () => {
   return <>
@@ -15,6 +16,7 @@ const Home = () => {
           <Title></Title>
         </div>
         <br></br><br></br><br></br>
+        <Dictionary></Dictionary>
         <br></br><br></br><br></br>
         <br></br><br></br><br></br>
         <div>

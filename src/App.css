@@ -54,6 +54,13 @@
   font-weight: 450;
 }
 
+.side-by-side-parent {
+  display: flex;
+  justify-content:center;
+  gap: 10px;
+  align-items: end;
+}
+
 .section {
   font-size: 60px;
   font-weight: 700;
@@ -130,6 +137,15 @@
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+#dictionary h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#dictionary h2 {
+  font-size: 25px;
 }
 
 /* Sky container only covers top 30% */
