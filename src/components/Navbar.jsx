@@ -8,7 +8,7 @@ const scrollToSection = (id) => {
 };
 
 const Navbar = () => {
-  const [navOverlay, setNavOverlay] = useState(true);
+  const [navOverlay, setNavOverlay] = useState(false);
 
   const flipOverlay = () => {
       if (navOverlay) {
@@ -25,10 +25,18 @@ const Navbar = () => {
         {navOverlay && (
             <div id="navbar-overlay">
                 <a className="closebtn" onClick={flipOverlay}>&times;</a>
-                <a>About</a>
-                <a>Services</a>
-                <a>Clients</a>
-                <a>Contact</a>
+                <div id="navbar-overlay-child">
+                  <a onClick={() => scrollToSection("home-view")}>home</a>
+                </div>
+                <div id="navbar-overlay-child">
+                  <a onClick={() => scrollToSection("experiences-view")}>experiences</a>
+                </div>
+                <div id="navbar-overlay-child">
+                  <a>projects</a>
+                </div>
+                <div id="navbar-overlay-child">
+                  <a>contact</a>
+                </div>
             </div>
         )}
       </div>

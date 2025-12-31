@@ -104,12 +104,16 @@
   background-color: rgba(22, 21, 21, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #navbar-overlay a {
-  padding: 8px;
+  padding: 20px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 48px;
   color: #818181;
   display: flex;
   justify-content: center;
