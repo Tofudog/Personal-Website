@@ -19,10 +19,15 @@ const Dictionary = () => {
             </a>
             </div>
             <div>
-            <button onClick={() => playAudio()}>click</button>
-            <h2>like a lion</h2>
-            <h3>synonyms</h3>
-            <h4 className="quote">verse</h4>
+            <button className="listen-bubble" onClick={() => playAudio()}>liːəʊˈnɑːdəʊ 📢</button>
+            <h2>definition: like a lion</h2>
+            <h3>synonyms:
+                [Awesome, Intelligent, Creative,
+                 Unbelievably Hillarious 😂, Lion-like, Da Vinci]
+            </h3>
+            <h4 className="quote">
+                (Proverbs 30:30 KJV) A lion which is strongest among beasts, and turneth not away for any;
+            </h4>
             </div>
         </div>
     </>

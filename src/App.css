@@ -148,6 +148,28 @@
   font-size: 25px;
 }
 
+.listen-bubble {
+  color: rgb(0, 122, 144);
+  background-color: white;
+  border-color: rgb(0, 122, 144);
+  border-width: 2px;
+  border-radius: 20px;
+}
+
+.listen-bubble:hover {
+  color: rgb(0, 122, 144);
+  background-color: rgb(223, 213, 213);
+}
+
+.listen-bubble:active {
+  color: white;
+  background-color: rgb(0, 122, 144);
+}
+
+.quote {
+  font-style: italic;
+}
+
 /* Sky container only covers top 30% */
 .sky {
     position: absolute;

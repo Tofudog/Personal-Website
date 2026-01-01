@@ -32,6 +32,15 @@ a:visited {
   color: #754bd7;
 }
 
+a > h2 {
+  color: #754bd7;
+}
+
+a > h2:hover {
+  color: #754bd7;
+  text-decoration: underline;
+}
+
 body {
   margin: 0;
   display: flex;
