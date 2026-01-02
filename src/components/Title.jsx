@@ -4,9 +4,11 @@ const Title = () => {
     return (
         <>
             <div>
-                <div className="sky">
-                    <div className="moon" />
-                </div>
+                {window.innerWidth > 450 && (
+                    <div className="sky">
+                        <div className="moon" />
+                    </div>
+                )}
             </div>
             <div style={{
                 backgroundImage: `url(${topBackground})`,

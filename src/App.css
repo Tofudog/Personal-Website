@@ -206,6 +206,23 @@
   font-style: italic;
 }
 
+.accordion-wrapper {
+  position: relative;
+}
+
+.accordion-question {
+  background-color: rgb(92, 92, 92);
+  cursor: pointer;
+}
+
+.accordion-answer {
+  background-color: rgb(26, 26, 26);
+}
+
+.accordion-hidden {
+  display: none;
+}
+
 /* Sky container only covers top 30% */
 .sky {
     position: absolute;

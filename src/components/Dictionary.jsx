@@ -2,11 +2,14 @@ import sound from "./../assets/leonardo.mp3";
 
 const Synonyms = () => {
     return <>
+        <h3>synonyms:</h3>
         <div className="grid-container">
             <div className="word-bubble">Awesome</div>
             <div className="word-bubble">Intelligent</div>
             <div className="word-bubble">Creative</div>
             <div className="word-bubble">Funny</div>
+            <div className="word-bubble">Competent</div>
+            <div className="word-bubble">GOAT 🐐</div>
             <div className="word-bubble">Lion-like</div>
             <div className="word-bubble">Da Vinci</div>
         </div>

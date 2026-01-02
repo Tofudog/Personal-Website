@@ -1,0 +1,23 @@
+[
+    {
+        "company": "Oteemo",
+        "timeframe": "June 2023 - Aug 2023",
+        "skills": [
+            "tensorflow", "technical writing"
+        ]
+    },
+    {
+        "company": "Amazon",
+        "timeframe": "May 2024 - Aug 2024",
+        "skills": [
+            "Python", "AWS", "Git"
+        ]
+    },
+    {
+        "company": "Amazon",
+        "timeframe": "May 2025 - Aug 2025",
+        "skills": [
+            "React TS", "AWS", "Git", "CI/CD"
+        ]
+    }
+]

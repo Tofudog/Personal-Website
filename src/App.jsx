@@ -5,6 +5,7 @@ import Title from './components/Title';
 import Navbar from './components/Navbar';
 import StarBackground from './components/StarBackground';
 import Dictionary from './components/Dictionary';
+import experiencesData from "./data/experiences.json";
 
 const Home = () => {
   return <>
@@ -28,7 +29,7 @@ const Home = () => {
             </h1>
             <br></br>
             <div id="experiences-view">
-              <Experiences></Experiences>
+              <Experiences data={experiencesData}></Experiences>
             </div>
           </div>
         </div>
