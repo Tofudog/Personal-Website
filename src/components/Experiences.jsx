@@ -1,31 +1,37 @@
-const DescribeAmazon = () => {
-  return <>
-    <div>
-      <p>Here is what I did</p>
-    </div>
-  </>
-};
+import { useState } from "react";
 
-const Experiences = () => {
+const Experiences = ({ data }) => {
+  const [activeIndex, setActiveIndex] = useState(-1);
+
+  const toggleActiveAccordion = (index) => {
+    if (index === activeIndex) {
+      setActiveIndex(-1);
+    }
+    else {
+      setActiveIndex(index);
+    }
+  };
+
   return (
     <div>
-      <div className="collapse collapse-plus bg-base-100 border border-base-300">
-        <input type="radio" name="my-accordion-3" defaultChecked />
-        <div className="collapse-title font-semibold"><DescribeAmazon></DescribeAmazon></div>
-        <div className="collapse-content text-sm"></div>
-      </div>
-      <br></br>
-      <div className="collapse collapse-plus bg-base-100 border border-base-300">
-        <input type="radio" name="my-accordion-3" />
-        <div className="collapse-title font-semibold">I forgot my password. What should I do?</div>
-        <div className="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
-      </div>
-      <br></br>
-      <div className="collapse collapse-plus bg-base-100 border border-base-300">
-        <input type="radio" name="my-accordion-3" />
-        <div className="collapse-title font-semibold">How do I update my profile information?</div>
-        <div className="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
-      </div>
+      {data.map((item, index) => {
+        return <>
+          <div className="accordion-wrapper" key={index}>
+            <div onClick={() => toggleActiveAccordion(index)} className="accordion-question">
+              <div>{item.company}</div>
+              <div>{item.timeframe}</div>
+            </div>
+            <div className={index === activeIndex ? "accordion-answer" : "accordion-hidden"}>
+              {item.skills.map((skill) => (
+                <>
+                  <h3>{skill}</h3>
+                </>
+              ))}
+            </div>
+            <br></br><br></br>
+          </div>
+        </>
+      })}
     </div>
   );
 };
