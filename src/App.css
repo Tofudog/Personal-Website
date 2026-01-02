@@ -139,6 +139,27 @@
   font-size: 60px;
 }
 
+#dictionary {
+  position: relative;
+  background-color: rgb(18, 16, 16, 100%);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  border-radius: 20px;
+  border-width: 1px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
+
+#dictionary:hover {
+  border-color: orange;
+  box-shadow: 
+      0 0 10px rgba(221, 188, 2, 0.6),
+      0 0 30px rgba(221, 188, 2, 0.4),
+      0 0 60px rgba(221, 188, 2, 0.2);
+}
+
 #dictionary h1 {
   font-size: 40px;
   font-weight: bold;
@@ -146,6 +167,14 @@
 
 #dictionary h2 {
   font-size: 25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 350px;
+  margin: 10px auto;
 }
 
 .listen-bubble {
@@ -164,6 +193,13 @@
 .listen-bubble:active {
   color: white;
   background-color: rgb(0, 122, 144);
+}
+
+.word-bubble {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(255, 73, 1);
+  border-radius: 20px;
 }
 
 .quote {
