@@ -208,15 +208,37 @@
 
 .accordion-wrapper {
   position: relative;
+  width: 60%;
+  min-width: 400px;    /* prevents collapsing */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .accordion-question {
   background-color: rgb(92, 92, 92);
   cursor: pointer;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.left-section {
+  display:inline-block;
+  margin: 0px;
+}
+
+.right-section {
+  float: right;
+  margin: 0px;
 }
 
 .accordion-answer {
   background-color: rgb(26, 26, 26);
+  border-radius: 12px;
+  padding: 10px;
 }
 
 .accordion-hidden {

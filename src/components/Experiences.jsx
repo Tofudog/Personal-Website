@@ -18,8 +18,16 @@ const Experiences = ({ data }) => {
         return <>
           <div className="accordion-wrapper" key={index}>
             <div onClick={() => toggleActiveAccordion(index)} className="accordion-question">
-              <div>{item.company}</div>
-              <div>{item.timeframe}</div>
+              <div className="left-section">
+                {item.title} @&nbsp;
+                {item.company}
+              </div>
+              <div className="right-section">
+                {item.timeframe}
+                &nbsp;&nbsp;
+                &nbsp;&nbsp;
+                +
+              </div>
             </div>
             <div className={index === activeIndex ? "accordion-answer" : "accordion-hidden"}>
               {item.skills.map((skill) => (
@@ -28,7 +36,7 @@ const Experiences = ({ data }) => {
                 </>
               ))}
             </div>
-            <br></br><br></br>
+            <br></br>
           </div>
         </>
       })}
