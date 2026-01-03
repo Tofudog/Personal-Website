@@ -195,6 +195,18 @@
   background-color: rgb(0, 122, 144);
 }
 
+.bubble-list {
+  display: flex;
+  justify-content: center;
+}
+
+.bubble-item {
+  background-color: rgb(67, 91, 107);
+  margin: 4px;
+  padding: 4px;
+  border-radius: 10px;
+}
+
 .word-bubble {
   color: white;
   font-weight: bold;
@@ -222,7 +234,14 @@
   margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
-  
+}
+
+.accordion-question:hover {
+  border-color: rgb(189, 123, 0);
+  box-shadow: 
+      0 0 10px rgba(86, 73, 0, 0.8),
+      0 0 30px rgba(86, 73, 0, 0.6),
+      0 0 60px rgba(86, 73, 0, 0.4);
 }
 
 .left-section {
