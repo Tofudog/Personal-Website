@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Personal Website",
+        "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgslwBfjqAXF27ZycheVvS1A-9kJj2cTiisfVv-BNwJN27276r4ymtrbRJb_qStFflN8bV-2gWQrs-CapQmzdMHMRSzpPnfS4mjy1dP39-q3i3nxErUfdGeGqSiVr2DF46JQ0K9n9AgTZw/s1600/Super-Mario-Galaxy-Lumas.jpg",
+        "skills": [
+            "React JS", "Tailwind CSS", "Daisy UI"
+        ],
+        "description": "I'm not quite sure a description is necessary... this is the website you're looking at right now!",
+        "code": "https://github.com/Tofudog/Personal-Website"
+    },
+    {
+        "title": "Yeetcode",
+        "logo": "https://miro.medium.com/1*0HMd3UBqpu478hk_HbhEaA.png",
+        "skills": [
+            "Node JS", "Mongo DB", "HTML", "CSS", "Websocket IO", "GraphQL"
+        ],
+        "description": "Yeetcode is a Google Chrome extension that enables two Leetcode users to battle each other. This is useful for preparing for DSA interviews and is reminiscent of chess.com's puzzle battles.",
+        "code": "https://github.com/Tofudog/Yeetcode"
+    }
+]
