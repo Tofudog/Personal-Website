@@ -6,6 +6,7 @@ import Title from './components/Title';
 import Navbar from './components/Navbar';
 import StarBackground from './components/StarBackground';
 import Dictionary from './components/Dictionary';
+import Bottom from './components/Bottom';
 import experiencesData from "./data/experiences.json";
 import projectsData from "./data/projects.json";
 
@@ -71,6 +72,7 @@ function App() {
     <>
       <div>
         <Home></Home>
+        <Bottom></Bottom>
       </div>
     </>
   )

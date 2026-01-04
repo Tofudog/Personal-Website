@@ -8,6 +8,15 @@
   text-align: center;
 }
 
+.full-width {
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+  width: calc(100% + 4rem);
+  height: calc(100% + 4rem);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -145,7 +154,8 @@
 
 #dictionary {
   position: relative;
-  background-color: rgb(18, 16, 16, 100%);
+  /* background-color: rgb(18, 16, 16, 100%); */
+  background-image: linear-gradient(to bottom, rgb(18, 16, 16), rgb(54, 44, 44));
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 15vw;
@@ -286,6 +296,10 @@
       0 0 10px rgba(221, 188, 2, 0.6),
       0 0 30px rgba(221, 188, 2, 0.4),
       0 0 60px rgba(221, 188, 2, 0.2);
+}
+
+.copyright {
+  color: rgba(201, 196, 196, 0.603);
 }
 
 /* Sky container only covers top 30% */

@@ -40,6 +40,7 @@ const Experiences = ({ data }) => {
             </div>
             <div className={index === activeIndex ? "accordion-answer" : "accordion-hidden"}>
               <div>
+                🌐&nbsp;
                 {item.location}
               </div>
               <br></br>
