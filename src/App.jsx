@@ -9,6 +9,7 @@ import Dictionary from './components/Dictionary';
 import Bottom from './components/Bottom';
 import experiencesData from "./data/experiences.json";
 import projectsData from "./data/projects.json";
+import Contact from './components/Contact';
 
 const Home = () => {
   return <>
@@ -58,7 +59,7 @@ const Home = () => {
             </h1>
             <br></br>
             <div id="contact-view">
-
+              <Contact></Contact>
             </div>
           </div>
         </div>
