@@ -16,5 +16,23 @@
         ],
         "description": "Yeetcode is a Google Chrome extension that enables two Leetcode users to battle each other. This is useful for preparing for DSA interviews and is reminiscent of chess.com's puzzle battles.",
         "code": "https://github.com/Tofudog/Yeetcode"
+    },
+    {
+        "title": "Earthquake Outlier DBScan",
+        "logo": "https://plus.unsplash.com/premium_photo-1695914233513-6f9ca230abdb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWFydGhxdWFrZXxlbnwwfHwwfHx8MA%3D%3D",
+        "skills": [
+            "Jupyter Notebook", "Matplotlib", "Pandas"
+        ],
+        "description": "For CS470 Data Mining, my group sought to find earthquake outliers using the DBScan algorithm. This is particularly useful for predicting the location of future earthquakes.",
+        "code": "https://github.com/Tofudog/CS470-Final-Project"
+    },
+    {
+        "title": "Brain Check",
+        "logo": "https://st.depositphotos.com/1265046/1328/i/450/depositphotos_13281915-stock-photo-human-brain-in-x-ray.jpg",
+        "skills": [
+            "XCode", "Swift", "Figma"
+        ],
+        "description": "[Current in development] Brain Check is an iOS application that enables you to see how many brain cells you've lost after hearing something idiotic. Simply click on a button and it will inform you.",
+        "code": "https://github.com/Tofudog/Brain-Check"
     }
 ]
