@@ -1,23 +1,42 @@
 [
     {
         "company": "Oteemo",
+        "title": "AI Intern",
+        "location": "Remote (Reston, Virginia)",
         "timeframe": "June 2023 - Aug 2023",
         "skills": [
             "tensorflow", "technical writing"
-        ]
+        ],
+        "description": "I worked on a project that uses computer vision to determine which gun a bullet was shot from. This is useful for crime scenes involving firearms and was even presented at the International Criminology Hybrid Conference."
     },
     {
         "company": "Amazon",
+        "title": "SDE Intern",
+        "location": "Seattle, Washington",
         "timeframe": "May 2024 - Aug 2024",
         "skills": [
             "Python", "AWS", "Git"
-        ]
+        ],
+        "description": "I worked under the Shopping Quality team, which is an engineering team that explores Amazon products. For my project, I developed a feature to enable parsing images within an internal platform called Harmonia."
     },
     {
         "company": "Amazon",
+        "title": "SDE Intern",
+        "location": "Seattle, Washington",
         "timeframe": "May 2025 - Aug 2025",
         "skills": [
             "React TS", "AWS", "Git", "CI/CD"
-        ]
+        ],
+        "description": "I worked under the SuperFresh team, which is an up-to-date LLM data provider to Rufus. For my project, I developed two features in an internal Amazon platform called Wedge to simplify evidence insertion into an index."
+    },
+    {
+        "company": "M||E",
+        "title": "VP",
+        "location": "Atlanta, Georgia",
+        "timeframe": "August 2024 - Present",
+        "skills": [
+            "Python", "Java", "C++", "Canva"
+        ],
+        "description": "M||E is Emory University's competitive programming and technical interview club. As Vice President, my responsibilities have been assisting with funding, designing the flier, and delivering lectures on topics like BFS and recursion."
     }
 ]

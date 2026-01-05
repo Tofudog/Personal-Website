@@ -1,10 +1,23 @@
+import { useEffect, useState } from "react";
 import topBackground from "./../assets/lion-image-moon.png";
 
 const Title = () => {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <>
             <div>
-                {window.innerWidth > 450 && (
+                {screenWidth > 500 && (
                     <div className="sky">
                         <div className="moon" />
                     </div>

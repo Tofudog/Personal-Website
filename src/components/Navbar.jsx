@@ -32,10 +32,10 @@ const Navbar = () => {
                   <a onClick={() => scrollToSection("experiences-view")}>experiences</a>
                 </div>
                 <div id="navbar-overlay-child">
-                  <a>projects</a>
+                  <a onClick={() => scrollToSection("projects-view")}>projects</a>
                 </div>
                 <div id="navbar-overlay-child">
-                  <a>contact</a>
+                  <a onClick={() => scrollToSection("contact-view")}>contact</a>
                 </div>
             </div>
         )}
@@ -64,11 +64,11 @@ const Navbar = () => {
             </div>
             <div className="navbar-section">
               <p>011</p>
-              <a>// projects</a>
+              <a onClick={() => scrollToSection("projects-view")}>// projects</a>
             </div>
             <div className="navbar-section">
               <p>100</p>
-              <a>// contact</a>
+              <a onClick={() => scrollToSection("contact-view")}>// contact</a>
             </div>
           </div>
         </div>

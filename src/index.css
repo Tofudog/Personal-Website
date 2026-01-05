@@ -50,12 +50,17 @@ body {
 }
 
 p {
-  font-size: 10px;
+  font-size: 12px;
+  padding: 8px;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 button {

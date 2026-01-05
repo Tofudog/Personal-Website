@@ -2,10 +2,27 @@
 @plugin "daisyui";
 
 #root {
-  max-width: 1280px;
+  max-width: 2280px;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+#root2 {
+  max-width: 2280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.circle {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -42,6 +59,10 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.in-front {
+  position: relative;
 }
 
 .title {
@@ -141,7 +162,8 @@
 
 #dictionary {
   position: relative;
-  background-color: rgb(18, 16, 16, 100%);
+  /* background-color: rgb(18, 16, 16, 100%); */
+  background-image: linear-gradient(to bottom, rgb(18, 16, 16), rgb(54, 44, 44));
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 15vw;
@@ -195,6 +217,20 @@
   background-color: rgb(0, 122, 144);
 }
 
+.bubble-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bubble-item {
+  background-color: rgb(67, 91, 107);
+  margin: 4px;
+  padding: 4px;
+  border-radius: 10px;
+}
+
 .word-bubble {
   color: white;
   font-weight: bold;
@@ -208,19 +244,70 @@
 
 .accordion-wrapper {
   position: relative;
+  width: 60%;
+  min-width: 400px;    /* prevents collapsing */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .accordion-question {
-  background-color: rgb(92, 92, 92);
+  background-color: rgb(27, 5, 5);
   cursor: pointer;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-width: 0.7px;
+}
+
+.accordion-question:hover {
+  border-color: rgb(189, 123, 0);
+  box-shadow: 
+      0 0 10px rgba(86, 73, 0, 0.8),
+      0 0 30px rgba(86, 73, 0, 0.6),
+      0 0 60px rgba(86, 73, 0, 0.4);
+}
+
+.left-section {
+  display:inline-block;
+  margin: 0px;
+}
+
+.right-section {
+  float: right;
+  margin: 0px;
 }
 
 .accordion-answer {
   background-color: rgb(26, 26, 26);
+  border-radius: 12px;
+  padding: 10px;
 }
 
 .accordion-hidden {
   display: none;
+}
+
+.project-box {
+  background-color: rgb(26, 26, 26);
+  padding: 25px;
+  margin: 10px;
+  border-radius: 10px;
+  border-color: white;
+  border-width: 1px;
+}
+
+.project-box:hover {
+  border-color: orange;
+  box-shadow: 
+      0 0 10px rgba(221, 188, 2, 0.6),
+      0 0 30px rgba(221, 188, 2, 0.4),
+      0 0 60px rgba(221, 188, 2, 0.2);
+}
+
+.copyright {
+  color: rgba(201, 196, 196, 0.603);
 }
 
 /* Sky container only covers top 30% */
