@@ -2,19 +2,17 @@
 @plugin "daisyui";
 
 #root {
-  max-width: 1280px;
+  max-width: 2280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0rem;
   text-align: center;
 }
 
-.full-width {
-  margin-left: -8rem;
-  margin-right: -8rem;
-  margin-top: -2rem;
-  margin-bottom: -2rem;
-  width: calc(100% + 16rem);
-  height: calc(100% + 4rem);
+#root2 {
+  max-width: 2280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 .circle {

@@ -13,6 +13,7 @@ import Contact from './components/Contact';
 
 const Home = () => {
   return <>
+    <div id="root2">
       <div id="home-view">
         <div>
           <StarBackground></StarBackground>
@@ -65,6 +66,7 @@ const Home = () => {
         </div>
         <br></br>
       </div>
+    </div>
   </>
 };
 

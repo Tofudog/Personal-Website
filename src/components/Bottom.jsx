@@ -5,7 +5,7 @@ import codeforces_logo from "./../assets/codeforces.png";
 
 const Bottom = () => {
     return <>
-        <div className="full-width">
+        <div>
             <div className="flex flex-col relative bg-[#2b2824] w-full h-75 justify-center items-center">
                 <h4 className="copyright">
                     Copyright © 2026 Leonardo Amato Regis de Farias

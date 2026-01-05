@@ -28,5 +28,15 @@
             "React TS", "AWS", "Git", "CI/CD"
         ],
         "description": "I worked under the SuperFresh team, which is an up-to-date LLM data provider to Rufus. For my project, I developed two features in an internal Amazon platform called Wedge to simplify evidence insertion into an index."
+    },
+    {
+        "company": "M||E",
+        "title": "VP",
+        "location": "Atlanta, Georgia",
+        "timeframe": "August 2024 - Present",
+        "skills": [
+            "Python", "Java", "C++", "Canva"
+        ],
+        "description": "M||E is Emory University's competitive programming and technical interview club. As Vice President, my responsibilities have been assisting with funding, designing the flier, and delivering lectures on topics like BFS and recursion."
     }
 ]

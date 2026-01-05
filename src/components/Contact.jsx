@@ -41,85 +41,53 @@ const Contact = () => {
   return (
     <>
         <div>
-            <div>
-                <label className="input validator">
-                    <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <g
-                        strokeLinejoin="round"
-                        strokeLinecap="round"
-                        strokeWidth="2.5"
-                        fill="none"
-                        stroke="currentColor"
-                        >
-                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                        </g>
+            <div className="space-y-5 max-w-xl mx-auto">
+                <div className="flex items-center gap-3 border rounded-xl px-4 py-3 focus-within:ring-2 focus-within:ring-primary transition">
+                    <svg className="h-5 w-5 opacity-60" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19a6 6 0 10-6 0" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 12a4 4 0 100-8 4 4 0 000 8z" />
                     </svg>
+
                     <input
-                        type="text"
-                        required
-                        placeholder="Name"
-                        pattern="[A-Za-z][A-Za-z0-9\- ]*"
-                        minlength="2"
-                        maxlength="500"
-                        title="Only letters, numbers or dash"
-                        onChange={handleNameChange}
+                    type="text"
+                    required
+                    placeholder="Your name"
+                    minLength={2}
+                    maxLength={500}
+                    className="w-full outline-none bg-transparent"
+                    onChange={handleNameChange}
                     />
-                </label>
-            </div>
-            <br></br>
-            <div>
-                <label className="input validator">
-                    <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <g
-                        strokeLinejoin="round"
-                        strokeLinecap="round"
-                        strokeWidth="2.5"
-                        fill="none"
-                        stroke="currentColor"
-                        >
-                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                        </g>
+                </div>
+                <div className="flex items-center gap-3 border rounded-xl px-4 py-3 focus-within:ring-2 focus-within:ring-primary transition">
+                    <svg className="h-5 w-5 opacity-60" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l9 6 9-6" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 8v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8" />
                     </svg>
+
                     <input
-                        type="text"
-                        required
-                        placeholder="Email"
-                        pattern="x /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g"
-                        minlength="3"
-                        maxlength="30"
-                        title="Only letters, numbers or dash"
-                        onChange={handleEmailChange}
+                    type="email"
+                    required
+                    placeholder="Email address"
+                    className="w-full outline-none bg-transparent"
+                    onChange={handleEmailChange}
                     />
-                </label>
-            </div>
-            <br></br>
-            <div>
-                <label className="input validator h-30">
-                    <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <g
-                        strokeLinejoin="round"
-                        strokeLinecap="round"
-                        strokeWidth="2.5"
-                        fill="none"
-                        stroke="currentColor"
-                        >
-                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                        </g>
+                </div>
+                <div className="flex gap-3 border rounded-xl px-4 py-3 focus-within:ring-2 focus-within:ring-primary transition items-start">
+                    <svg className="h-5 w-5 opacity-60 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h8M8 14h5" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12c0 4.418-4.03 8-9 8a9.77 9.77 0 01-4-.8L3 20l1.2-3A7.94 7.94 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                     </svg>
-                    <input
-                        type="text"
-                        required
-                        placeholder="Message"
-                        pattern="[A-Za-z][A-Za-z0-9\-]*"
-                        minlength="3"
-                        maxlength="250"
-                        title="Only letters, numbers or dash"
-                        onChange={handleMessageChange}
+
+                    <textarea
+                    required
+                    placeholder="Your message..."
+                    minLength={5}
+                    maxLength={500}
+                    rows={4}
+                    className="w-full resize-none outline-none bg-transparent"
+                    onChange={handleMessageChange}
                     />
-                </label>
+                </div>
             </div>
             <br></br>
             <div>

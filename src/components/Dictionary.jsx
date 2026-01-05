@@ -39,8 +39,13 @@ const Dictionary = () => {
                 <br></br><br></br>
                 <h2>definition: like a lion 𓃬</h2>
                 <br></br>
+                <h2>etymology:
+                    Italian, from Old High German Leonhard;
+                    from leon lion; literally lion-strong or brave as a lion.
+                </h2>
+                <br></br><br></br>
                 <Synonyms></Synonyms>
-                <br></br>
+                <br></br><br></br>
                 <h4 className="quote">
                     "A lion which is strongest among beasts, and turneth not away for any;" - Proverbs 30:30 KJV
                 </h4>
