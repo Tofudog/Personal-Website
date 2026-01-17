@@ -1,3 +1,7 @@
+# Update
+I officially purchased a domain via Netlify.com and am hosting this repository's code. Check out my personal website here: http://leodefarias.com/
+<br><br>
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
