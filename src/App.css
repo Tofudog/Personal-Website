@@ -6,6 +6,8 @@
   margin: 0 auto;
   padding: 0rem;
   text-align: center;
+  width: 100%;
+  overflow-x: clip;
 }
 
 #root2 {
@@ -13,6 +15,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  width: 100%;
+  overflow-x: clip;
 }
 
 .circle {
@@ -66,12 +70,12 @@
 }
 
 .title {
-  font-size: 9.5vw;
+  font-size: clamp(2.25rem, 9.5vw, 6rem);
   font-weight: 600;
 }
 
 .subtitle {
-  font-size: 25px;
+  font-size: clamp(1rem, 2.8vw, 1.56rem);
   font-weight: 450;
 }
 
@@ -166,8 +170,8 @@
   background-image: linear-gradient(to bottom, rgb(18, 16, 16), rgb(54, 44, 44));
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding-left: clamp(1rem, 8vw, 15vw);
+  padding-right: clamp(1rem, 8vw, 15vw);
   border-radius: 20px;
   border-width: 1px;
   transition: background-color 0.3s ease;
@@ -244,8 +248,8 @@
 
 .accordion-wrapper {
   position: relative;
-  width: 60%;
-  min-width: 400px;    /* prevents collapsing */
+  width: min(100%, 800px);
+  min-width: 0;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -258,6 +262,8 @@
   margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
   border-width: 0.7px;
 }
 
@@ -270,13 +276,15 @@
 }
 
 .left-section {
-  display:inline-block;
+  display: inline-block;
   margin: 0px;
+  text-align: left;
 }
 
 .right-section {
-  float: right;
+  float: none;
   margin: 0px;
+  white-space: nowrap;
 }
 
 .accordion-answer {
@@ -291,8 +299,8 @@
 
 .project-box {
   background-color: rgb(26, 26, 26);
-  padding: 25px;
-  margin: 10px;
+  padding: clamp(1rem, 2.5vw, 1.56rem);
+  margin: 0;
   border-radius: 10px;
   border-color: white;
   border-width: 1px;
@@ -308,6 +316,7 @@
 
 .copyright {
   color: rgba(201, 196, 196, 0.603);
+  padding-inline: 1rem;
 }
 
 /* Sky container only covers top 30% */
@@ -325,8 +334,8 @@
     position: absolute;
     top: 150px;      /* moved further up */
     right: 10vw;   /* moved slightly more to the side */
-    width: 7vw;
-    height: 7vw;
+    width: clamp(40px, 7vw, 90px);
+    height: clamp(40px, 7vw, 90px);
     border-radius: 9999px;
     background: radial-gradient(circle at 30% 30%, #ffffff, #e5e7eb 60%, #d1d5db);
     box-shadow: 0 0 30px rgba(255,255,255,0.6), 0 0 36px rgba(255,255,255,0.4);
@@ -353,4 +362,52 @@
     30% { opacity: 0; }
     50% { opacity: 0.5; }
     70% { opacity: 0.7; }
+}
+
+.section-block {
+  margin-top: clamp(2rem, 8vw, 4rem);
+}
+
+.section-spacer {
+  margin-top: clamp(1.5rem, 6vw, 3rem);
+}
+
+@media (max-width: 768px) {
+  #navbar-overlay a {
+    padding: 12px;
+    font-size: clamp(1.75rem, 8vw, 2.25rem);
+  }
+
+  #navbar-overlay .closebtn {
+    top: 8px;
+    right: 18px;
+    font-size: 42px;
+  }
+
+  .side-by-side-parent {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  #dictionary h1 {
+    font-size: clamp(2rem, 9vw, 2.5rem);
+  }
+
+  #dictionary h2 {
+    font-size: clamp(1rem, 4.8vw, 1.4rem);
+  }
+
+  .section {
+    font-size: clamp(2rem, 10vw, 2.75rem);
+  }
+
+  .accordion-question {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-section {
+    align-self: flex-end;
+  }
 }
