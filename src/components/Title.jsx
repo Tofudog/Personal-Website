@@ -17,7 +17,7 @@ const Title = () => {
     return (
         <>
             <div>
-                {screenWidth > 500 && (
+                {screenWidth > 1000 && (
                     <div className="sky">
                         <div className="moon" />
                     </div>
@@ -30,14 +30,14 @@ const Title = () => {
                 backgroundPosition: "top center",
 
                 height: "clamp(400px, 70vw, 725px)",
-                width: "clamp(400px, 70vw, 800px)",
-
+                width: "clamp(400px, 70vw, 725px)",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
                 color: "white",
                 textAlign: "center",
+                padding: "clamp(0.75rem, 3vw, 1.5rem)",
 
                 position: "relative", // container must be relative
                 overflow: "hidden"

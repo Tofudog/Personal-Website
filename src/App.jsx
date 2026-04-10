@@ -18,53 +18,43 @@ const Home = () => {
         <div>
           <StarBackground></StarBackground>
           <Navbar></Navbar>
-          <br></br><br></br>
           <Title></Title>
         </div>
-        <br></br><br></br><br></br>
-        <Dictionary></Dictionary>
-        <br></br><br></br><br></br>
-        <br></br><br></br><br></br>
-        <div>
+        <div className="section-block">
+          <Dictionary></Dictionary>
+        </div>
+        <div className="section-block">
           <div>
-            <h1 class="section">
-              <span class="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 via gray-300 to-gray-500">
+            <h1 className="section">
+              <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 via gray-300 to-gray-500">
                 Experiences
               </span>
             </h1>
-            <br></br>
-            <div id="experiences-view">
+            <div id="experiences-view" className="section-spacer">
               <Experiences data={experiencesData}></Experiences>
             </div>
           </div>
-          <br></br><br></br>
-          <br></br><br></br>
-          <div>
-            <h1 class="section">
-              <span class="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 via gray-300 to-gray-500">
+          <div className="section-block">
+            <h1 className="section">
+              <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 via gray-300 to-gray-500">
                 Projects
               </span>
             </h1>
-            <br></br>
-            <div id="projects-view">
+            <div id="projects-view" className="section-spacer">
               <Projects data={projectsData}></Projects>
             </div>
           </div>
-          <br></br><br></br>
-          <br></br><br></br>
-          <div>
-            <h1 class="section">
-              <span class="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 via gray-300 to-gray-500">
+          <div className="section-block">
+            <h1 className="section">
+              <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 via gray-300 to-gray-500">
                 Contact Me
               </span>
             </h1>
-            <br></br>
-            <div id="contact-view">
+            <div id="contact-view" className="section-spacer">
               <Contact></Contact>
             </div>
           </div>
         </div>
-        <br></br>
       </div>
     </div>
   </>
