@@ -23,14 +23,15 @@ const Title = () => {
                     </div>
                 )}
             </div>
+            <br></br><br></br>
             <div style={{
                 backgroundImage: `url(${topBackground})`,
                 backgroundSize: "100% 100%",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "top center",
 
-                height: "clamp(400px, 70vw, 725px)",
-                width: "clamp(400px, 70vw, 725px)",
+                height: "clamp(300px, 70vw, 725px)",
+                width: "clamp(300px, 70vw, 725px)",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",

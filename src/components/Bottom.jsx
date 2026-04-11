@@ -4,9 +4,9 @@ import leetcode_logo from "./../assets/leetcode.webp";
 import codeforces_logo from "./../assets/codeforces.png";
 
 const Bottom = () => {
-    return <>
-        <div>
-            <div className="flex flex-col relative bg-[#2b2824] w-full h-75 justify-center items-center">
+    return (
+        <footer className="relative z-10 w-full">
+            <div className="box-border flex flex-col relative bg-[#2b2824] w-full h-75 justify-center items-center pb-[env(safe-area-inset-bottom,0px)]">
                 <h4 className="copyright">
                     Copyright © 2026 Leonardo Amato Regis de Farias
                 </h4>
@@ -33,8 +33,8 @@ const Bottom = () => {
                     </div>
                 </div>
             </div>
-        </div>
-    </>
+        </footer>
+    );
 };
 
 export default Bottom;
