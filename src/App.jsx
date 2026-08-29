@@ -21,7 +21,7 @@ const Home = () => {
           <Title></Title>
         </div>
         <div className="section-block">
-          <div>
+          <div id="experiences-view-scroll">
             <h1 className="section">
               <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 via gray-300 to-gray-500">
                 Experiences
@@ -31,7 +31,7 @@ const Home = () => {
               <Experiences data={experiencesData}></Experiences>
             </div>
           </div>
-          <div className="section-block">
+          <div id="projects-view-scroll" className="section-block">
             <h1 className="section">
               <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 via gray-300 to-gray-500">
                 Projects
@@ -41,7 +41,7 @@ const Home = () => {
               <Projects data={projectsData}></Projects>
             </div>
           </div>
-          <div className="section-block">
+          <div id="contact-view-scroll" className="section-block">
             <h1 className="section">
               <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 via gray-300 to-gray-500">
                 Contact Me

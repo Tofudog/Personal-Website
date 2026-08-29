@@ -29,13 +29,13 @@ const Navbar = () => {
                   <a onClick={() => scrollToSection("home-view")}>home</a>
                 </div>
                 <div id="navbar-overlay-child">
-                  <a onClick={() => scrollToSection("experiences-view")}>experiences</a>
+                  <a onClick={() => scrollToSection("experiences-view-scroll")}>experiences</a>
                 </div>
                 <div id="navbar-overlay-child">
-                  <a onClick={() => scrollToSection("projects-view")}>projects</a>
+                  <a onClick={() => scrollToSection("projects-view-scroll")}>projects</a>
                 </div>
                 <div id="navbar-overlay-child">
-                  <a onClick={() => scrollToSection("contact-view")}>contact</a>
+                  <a onClick={() => scrollToSection("contact-view-scroll")}>contact</a>
                 </div>
             </div>
         )}
@@ -60,15 +60,15 @@ const Navbar = () => {
             </div>
             <div className="navbar-section">
               <p>010</p>
-              <a onClick={() => scrollToSection("experiences-view")}>// experiences</a>
+              <a onClick={() => scrollToSection("experiences-view-scroll")}>// experiences</a>
             </div>
             <div className="navbar-section">
               <p>011</p>
-              <a onClick={() => scrollToSection("projects-view")}>// projects</a>
+              <a onClick={() => scrollToSection("projects-view-scroll")}>// projects</a>
             </div>
             <div className="navbar-section">
               <p>100</p>
-              <a onClick={() => scrollToSection("contact-view")}>// contact</a>
+              <a onClick={() => scrollToSection("contact-view-scroll")}>// contact</a>
             </div>
           </div>
         </div>
