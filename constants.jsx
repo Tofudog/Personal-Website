@@ -1,5 +1,5 @@
-const SERVICE_ID = "service_x197ftj";
-const TEMPLATE_ID = "template_kp06dhu";
-const PUBLIC_KEY = "hYrKhhyQLeMivAhrE";
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
-export {SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY};
+export { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY };
