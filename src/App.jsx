@@ -21,9 +21,6 @@ const Home = () => {
           <Title></Title>
         </div>
         <div className="section-block">
-          <Dictionary></Dictionary>
-        </div>
-        <div className="section-block">
           <div>
             <h1 className="section">
               <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 via gray-300 to-gray-500">

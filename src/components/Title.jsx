@@ -51,6 +51,7 @@ const Title = () => {
                     CS Student @ Emory, Aspiring Front End Developer
                 </h2>
             </div>
+            <hr className="my-4 border-t-4 border-gray-300" />
         </>
     );
 };
