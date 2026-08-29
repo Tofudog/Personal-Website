@@ -27,12 +27,12 @@
         "code": "https://github.com/Tofudog/CS470-Final-Project"
     },
     {
-        "title": "Brain Check",
-        "logo": "https://st.depositphotos.com/1265046/1328/i/450/depositphotos_13281915-stock-photo-human-brain-in-x-ray.jpg",
+        "title": "Emory Hacks App",
+        "logo": "https://emoryhacks.com/_next/static/media/logo_transparent.b9b17e25.png",
         "skills": [
-            "XCode", "Swift", "Figma"
+            "React Native", "Expo", "Figma", "Spring Boot Java", "PostgreSQL", "Postman"
         ],
-        "description": "[Current in development] Brain Check is an iOS application that enables you to see how many brain cells you've lost after hearing something idiotic. Simply click on a button and it will inform you.",
-        "code": "https://github.com/Tofudog/Brain-Check"
+        "description": "This is the official mobile app for registering users and allowing them to see the schedule for Emory's 2026 fall hackathon. It works on both iOS and Android. I worked extensively on both frontend and backend code.",
+        "code": "https://github.com/emory-hacks/mobile"
     }
 ]
