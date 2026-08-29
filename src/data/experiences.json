@@ -38,5 +38,25 @@
             "Python", "Java", "C++", "Canva"
         ],
         "description": "M||E is Emory University's competitive programming and technical interview club. As Vice President, my responsibilities have been assisting with funding, designing the flier, and delivering lectures on topics like BFS and recursion."
+    },
+    {
+        "company": "Emory Hacks",
+        "title": "Full Stack Mobile Developer",
+        "location": "Atlanta, Georgia",
+        "timeframe": "March 2026 - Present",
+        "skills": [
+            "React Native", "Expo", "Java", "PostgreSQL"
+        ],
+        "description": "Emory Hacks is the university's only official CS hackathon. As the only full stack engineer, my responsibilities have been programming the mobile app, thoroughly testing it on iOS and Android, and writing backend code using Java Springboot. I also maintain both the api services and database."
+    },
+    {
+        "company": "Emory University",
+        "title": "Computing Center Technology Consultant ",
+        "location": "Atlanta, Georgia",
+        "timeframe": "June 2026 - Present",
+        "skills": [
+            "Poster Printing", "Tech Support", "Communication"
+        ],
+        "description": "The Cox Computing Center is one of Emory's most beloved places to do home work, host meetings, and chill. My role includes maintaining work spaces, assisting people with poster printing, and doing student tech support."
     }
 ]
