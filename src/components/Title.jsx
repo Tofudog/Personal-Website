@@ -41,7 +41,9 @@ const Title = () => {
                 padding: "clamp(0.75rem, 3vw, 1.5rem)",
 
                 position: "relative", // container must be relative
-                overflow: "hidden"
+                overflow: "hidden",
+                marginTop: "50px",
+                marginBottom: "50px"
             }}>
                 <h1 className="title">
                     Leonardo de Farias
@@ -51,7 +53,6 @@ const Title = () => {
                     CS Student @ Emory, Aspiring Front End Developer
                 </h2>
             </div>
-            <hr className="my-4 border-t-4 border-gray-300" />
         </>
     );
 };
