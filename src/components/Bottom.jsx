@@ -6,7 +6,7 @@ import codeforces_logo from "./../assets/codeforces.png";
 const Bottom = () => {
     return (
         <footer className="relative z-10 w-full">
-            <div className="box-border flex flex-col relative bg-[#2b2824] w-full h-75 justify-center items-center pb-[env(safe-area-inset-bottom,0px)]">
+            <div className="border-t-1 flex flex-col relative bg-[#2b2824] w-full h-75 justify-center items-center pb-[env(safe-area-inset-bottom,0px)]">
                 <h4 className="copyright">
                     Copyright © 2026 Leonardo Amato Regis de Farias
                 </h4>
